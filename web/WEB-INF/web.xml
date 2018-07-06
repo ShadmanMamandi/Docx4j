@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+                  http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <servlet>
+        <servlet-name>Hello</servlet-name>
+        <servlet-class>DocToPDF</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Hello</servlet-name>
+        <url-pattern>/DocToPDF</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Hi</servlet-name>
+        <servlet-class>ShowHtmlFile</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Hi</servlet-name>
+        <url-pattern>/ShowHtmlFile</url-pattern>
+    </servlet-mapping>
+</web-app>
